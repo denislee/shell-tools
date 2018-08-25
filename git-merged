@@ -1,0 +1,1 @@
+git push origin --delete $(git branch -r --merged origin/master |  grep origin | egrep -v '>|master|develop' | cut -d/ -f2-)
